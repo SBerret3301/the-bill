@@ -29,20 +29,28 @@
 # Fin
 
 
-
+l = 0
+m = 0
+p = 0
 for i in range(3):
     print("enter the name of the customer n'",i+1,":")
     a = input()
-    b = int(input("Give the price of the item :"))
-    if i == 0 :
-        c = b + b * 0.15 - b * 0.02 
-        x = a
-    if i == 1 :
-        d = b + b * 0.15 - b * 0.02
-        y = a
-    if i == 2 :
-        e = b + b * 0.15 - b * 0.02
-        z = a
-print("The Total to be paid for the customer",x,":",c,"DH")
-print("The Total to be paid for the customer",y,":",d,"DH")
-print("The Total to be paid for the customer",z,":",e,"DH")
+    n = int(input("enter the number of items : "))
+    for j in range(n):
+        print("Give the price of the item n'",j+1,":")
+        b = float(input())
+        if i == 0 :
+            x = a
+            c = b + b * 0.15 - b * 0.02
+            l += c
+        if i == 1 :
+            d = b + b * 0.15 - b * 0.02
+            m += d
+            y = a
+        if i == 2 :
+            e = b + b * 0.15 - b * 0.02
+            p += e
+            z = a
+print("The Total to be paid for the customer",x,":",l,"DH")
+print("The Total to be paid for the customer",y,":",m,"DH")
+print("The Total to be paid for the customer",z,":",p,"DH")
